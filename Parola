@@ -1,0 +1,9 @@
+import random
+semboller = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+sifre = ""
+uzunluk = int(input("Şifre Uzunluğu Kaç Olsun"))
+
+for i in range(uzunluk):
+    sifre += random.choice(semboller)
+
+print(sifre)
